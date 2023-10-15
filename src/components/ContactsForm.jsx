@@ -34,12 +34,12 @@ export const ContactsForm = ({ onAddContact }) => {
   };
 
   return (
-    <form onSubmit={onBtnSubmit}>
-      <label>Name</label>
-      <input type="text" name="name" value={name} onChange={onInputChange} />
-      <label>Number</label>
-      <input type="tel" name="number" value={number} onChange={onInputChange} />
-      <button type="submit">Add Contact</button>
+    <form onSubmit={onBtnSubmit} className='form'>
+      <label className='label-name'>Name</label>
+      <input type="text" name="name" value={name} onChange={onInputChange}  className='input-name'/>
+      <label className='label-number'>Number</label>
+      <input type="tel" name="number" value={number} onChange={onInputChange} className='input-number'/>
+      <button className='btnAddContact' type="submit">Add Contact</button>
     </form>
   );
 };
